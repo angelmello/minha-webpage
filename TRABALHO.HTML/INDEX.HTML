@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <link rel="stylesheet" href="TRABALHO.CSS">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="intro">
+            <h1>Bem-vindo à minha página pessoal</h1>
+            <p>Olá, sou [ANGÉLICA], desenvolvedora e entusiasta da tecnologia.</p>
+            <img src="IMG_20230812_220701897.jpg" alt="Minha Foto" id="minhaFoto">
+        </section>
+        <section id="sobre" class="sobre">
+            <h2>Sobre Mim</h2>
+            <p id="sobreMim">Sou uma pessoa apaixonada por tecnologia e inovação. Meu objetivo é criar soluções que façam a diferença.</p>
+        </section>
+        <section id="projetos" class="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="galeria">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <img src="projeto3.jpg" alt="Projeto 3">
+            </div>
+            <button id="abrirPdf">Abrir/Fechar PDF</button>
+            <iframe id="pdfFrame" style="display: none;" width="600" height="800"></iframe>
+        </section>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ANGÉLICA. Todos os direitos reservados.</p>
+    </footer>
+    <script src="TRABALHO.JS"></script>
+</body>
+</html>

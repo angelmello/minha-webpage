@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendário de Tarefas</title>
+    <link rel="stylesheet" href="TRABALHO.CSS">
+</head>
+<body>
+        
+        <div class="container">
+            <h1>Calendário de Tarefas</h1>
+            <input type="date" id="date-input">
+            <input type="text" id="task-input" placeholder="Digite sua tarefa">
+            <div id="task-list"></div>
+            <button id="add-task-btn">Adicionar Tarefa</button>
+        <div class="calendar">
+            <!-- Aqui você pode adicionar os dias do mês -->
+            <div class="day" onclick="addTask(this)">1</div>
+            <div class="day" onclick="addTask(this)">2</div>
+            <div class="day" onclick="addTask(this)">3</div>
+            <div class="day" onclick="addTask(this)">4</div>
+            <div class="day" onclick="addTask(this)">5</div>
+            <div class="day" onclick="addTask(this)">6</div>
+            <div class="day" onclick="addTask(this)">7</div>
+            <div class="day" onclick="addTask(this)">8</div>
+            <div class="day" onclick="addTask(this)">9</div>
+            <div class="day" onclick="addTask(this)">10</div>
+            <div class="day" onclick="addTask(this)">11</div>
+            <div class="day" onclick="addTask(this)">12</div>
+            <div class="day" onclick="addTask(this)">13</div>
+            <div class="day" onclick="addTask(this)">14</div>
+            <div class="day" onclick="addTask(this)">15</div>
+            <div class="day" onclick="addTask(this)">16</div>
+            <div class="day" onclick="addTask(this)">17</div>
+            <div class="day" onclick="addTask(this)">18</div>
+            <div class="day" onclick="addTask(this)">19</div>
+            <div class="day" onclick="addTask(this)">20</div>
+            <div class="day" onclick="addTask(this)">21</div>
+            <div class="day" onclick="addTask(this)">22</div>
+            <div class="day" onclick="addTask(this)">23</div>
+            <div class="day" onclick="addTask(this)">24</div>
+            <div class="day" onclick="addTask(this)">25</div>
+            <div class="day" onclick="addTask(this)">26</div>
+            <div class="day" onclick="addTask(this)">27</div>
+            <div class="day" onclick="addTask(this)">28</div>
+            <div class="day" onclick="addTask(this)">29</div>
+            <div class="day" onclick="addTask(this)">30</div>
+        </div>
+    </div>
+
+    <div class="task-modal" id="task-modal" style="display:none;">
+        <h2>Adicionar Tarefa</h2>
+
+        <button onclick="saveTask()">Salvar</button>
+        <button onclick="closeModal()">Fechar</button>
+    </div>
+
+    <script src="TRABALHO.JS"></script>
+</body>
+</html>
+
