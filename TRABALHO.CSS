@@ -1,0 +1,284 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+
+header {
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.titulo {
+    font-size: 3rem;
+    color: #000000;
+    animation: mover 5s linear infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.personalizado {
+    font-size: 3rem;
+color: #000000;
+animation: mover 5s linear infinite;
+}
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.sobre, .projetos, #contato {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #000000;
+}
+
+.galeria {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+.foto {
+    width: 200px;
+    transition: transform 0.5s;
+    cursor: pointer; /* Muda o cursor para indicar que a imagem é clicável */
+}
+
+.foto:hover {
+    opacity: 0.9; /* Muda a opacidade ao passar o mouse para dar um efeito visual */
+}
+.imagem-arredondada {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 50%; /* Faz a imagem ser redonda */
+    transition: transform 0.3s ease; /* Animacao de transformacao */
+    object-fit: cover; /* Para garantir que a imagem preencha o espaço */
+}
+
+.imagem-arredondada:hover {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+}
+
+.titulo-personalizado {
+    font-size: 1.5em;
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+}
+
+.video-arredondado {
+    display: flex;
+    justify-content: center;
+}
+
+.video-arredondado video {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+#contato {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+header {
+    text-align: center;
+
+    @keyframes piscar {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+
+    h1 {
+        animation: piscar 1s infinite;
+        text-align: center;
+        font-size: 3em;
+        color: #040303; /* Cor do texto */
+    }
+}
+
+h2 {
+    color: #555;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h3 {
+    color: #444;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+button {
+    background-color: #008CBA; /* Azul */
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+.contact-info, .experience, .education, .skills, .references {
+    margin: 10px 0;
+}
+.social-icons {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+    text-decoration: none;
+    color: #fff; /* Cor do ícone */
+    background-color: #333; /* Cor de fundo */
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px; /* Tamanho do ícone */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.icon:hover {
+    background-color: #007bff; /* Cor ao passar o mouse */
+}
+img {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    margin-right: 100px; /* Añade margen a la derecha para espacio */
+}
+.music-player {
+    margin-right: 300px; /* Espaço entre player de música e conteúdo */
+    margin: 20px auto; /* Centralize o player */
+            background-color: #f0f0f0; /* Cor de fundo do player */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+
+  
+        audio {
+            width: 100%; /* Largura total */
+            cursor: pointer; /* Muda o cursor para indicar interatividade */
+
+
+.content {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+} }
